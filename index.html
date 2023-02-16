@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigational Bar -->
+    <nav id="navbar" class="row spc-bet nav-padding center-aligned">
+        <h1>DojoWeather</h1>
+        <ul class="city-list row">
+            <li><a href="#">Burbank</a></li>
+            <li><a href="#">Chicago</a></li>
+            <li><a href="#">Dallas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="main-margin">
+        <!-- Heading -->
+        <section class="row spc-bet center-aligned head-margin-tb">
+            <h2 class="main-city-name">San Jose</h2>
+            <div>
+                <label for="weather-unit" class="weather-sel-label">show temperature in </label>
+                <select name="weather" id="weather-unit">
+                    <option value="celsius">&#8451;</option>
+                    <option value="farenheit">&#8457;</option>
+                </select>
+            </div>
+        </section>
+        <hr>
+        <!-- Weather Cards -->
+        <section class="row head-margin-tb spc-bet">
+            <div class="column gray-bkg center-aligned cont-padding">
+                <h3 class="day-desc">Today</h3>
+                <img src="img/some_rain.png" alt="Rain icon" class="weather-logo">
+                <p class="weather-desc">some rain</p>
+                <div class="row spc-bet temp-cont">
+                    <p class="max-temp">24&deg;</p>
+                    <p class="min-temp">18&deg;</p>
+                </div>
+            </div>
+            <div class="column gray-bkg center-aligned cont-padding">
+                <h3 class="day-desc">Tomorrow</h3>
+                <img src="img/some_sun.png" alt="Sun icon" class="weather-logo">
+                <p class="weather-desc">some sun</p>
+                <div class="row spc-bet temp-cont">
+                    <span class="max-temp">27&deg;</span>
+                    <span class="min-temp">19&deg;</span>
+                </div>
+            </div>
+            <div class="column gray-bkg center-aligned cont-padding">
+                <h3 class="day-desc">Friday</h3>
+                <img src="img/some_clouds.png" alt="Cloud icon" class="weather-logo">
+                <p class="weather-desc">some clouds</p>
+                <div class="row spc-bet temp-cont">
+                    <span class="max-temp">21&deg;</span>
+                    <span class="min-temp">16&deg;</span>
+                </div>
+            </div>
+            <div class="column gray-bkg center-aligned cont-padding">
+                <h3 class="day-desc">Saturday</h3>
+                <img src="img/some_sun.png" alt="Raining icon" class="weather-logo">
+                <p class="weather-desc">some sun</p>
+                <div class="row spc-bet temp-cont">
+                    <span class="max-temp">26&deg;</span>
+                    <span class="min-temp">21&deg;</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Cookie Dialog Box -->
+    <section id="cookie-dialog" class="row center-aligned main-margin blk-border cont-padding">
+        <img src="img/cookie.png" alt="cookie-icon">
+        <div>
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, 
+                to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button id="confirm-cookie-btn">I Accept</button>
+    </section>
+
+</body>
+</html>
